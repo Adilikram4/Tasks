@@ -1,14 +1,15 @@
+print("Hello student")
 while True:
-    a = int(input("Enter your number between 0 to 100: "))
-    if a >= 90 :
-        print("your grade is A")
-    elif a >=80 :
-     print("your grade is B")
-    elif a >=70 :
-     print("your grade is C")
-    elif a >=60 :
-     print("your grade is D")
-    elif a >=0 :
-     print("your grade is F")
-else:
-    print("Enter right value :")
+    marks = float(input("Enter your number between 0-100:\n "))
+    if 90 <= marks <= 100 :
+        grade = ("A")
+    elif 80 <= marks <= 89 :
+        grade = ("B")
+    elif 70 <= marks <= 79 :
+        grade = ("C")
+    elif 60 <= marks <= 69 :
+        grade = ("D")
+    else:
+        00 <= marks <= 59
+        grade = ("F")
+    print("Your Grade is:", grade)
