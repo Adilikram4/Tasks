@@ -9,6 +9,7 @@ while True:
     print ("Your remaining Amount: " , amount - a)
     next_calculation = input("continue shopping? (yes/no): ")
     if next_calculation == "no":
+        print("Thank you for Shopping")
         break
 else:
     print("Invalid Input")
