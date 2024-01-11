@@ -1,6 +1,6 @@
 print("Hello student")
 while True:
-    marks = float(input("Enter your number between 0-100:\n "))
+    marks = float(input("Enter your number between 0-100:\n"))
     if 90 <= marks <= 100 :
         grade = ("A")
     elif 80 <= marks <= 89 :
@@ -12,4 +12,4 @@ while True:
     else:
         00 <= marks <= 59
         grade = ("F")
-    print("Your Grade is:", grade)
+    print("Your Grade is:", grade,"\n")
