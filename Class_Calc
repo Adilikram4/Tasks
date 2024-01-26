@@ -1,41 +1,48 @@
+# make a class of calculator
 class Calculator:
     def __init__(self):
         pass
+#function import from another file
+    from addition import add
 
-    def add(self, num1, num2):
-        return num1 + num2
-
-    def subtract(self, num1, num2):
-        return num1 - num2
-
-    def multiply(self, num1, num2):
-        return num1 * num2
-
-    def divide(self, num1, num2):
-        if num2 != 0:
-            return num1 / num2
-        else:
-            return "Cannot divide by zero"
-
-# make object for calculator class
+    from subtraction import sub
+    
+    from multiply import mult
+    
+    from division import divid
+    
+# make object of class
 calc = Calculator()
 
-# Get input by user
+# get input from user
 num1 = float(input("Enter the first number: "))
 operator = input("Enter the operator (+, -, *, /): ")
 num2 = float(input("Enter the second number: "))
 
-# operation works
+# operation working
 if operator == '+':
-    result = calc.add(num1, num2)
+    ans = calc.add(num1, num2)
 elif operator == '-':
-    result = calc.subtract(num1, num2)
+    ans = calc.sub(num1, num2)
 elif operator == '*':
-    result = calc.multiply(num1, num2)
+    ans = calc.mult(num1, num2)
 elif operator == '/':
-    result = calc.divide(num1, num2)
+    ans = calc.divid(num1, num2)
 else:
-    result = "Invalid operator"
+    ans = "Invalid operator"
 
-# Display output
-print(f"Result: {result}")
+# answer display
+print(f"Answer: {ans}")
+
+
+#def add(self, num1, num2):
+        return num1 + num2
+#def sub(self, num1, num2):
+        return num1 - num2
+#def mult(self, num1, num2):
+        return num1 * num2
+#def divid(self, num1, num2):
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Cannot divide by zero"
