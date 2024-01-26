@@ -1,0 +1,41 @@
+class Calculator:
+    def __init__(self):
+        pass
+
+    def add(self, num1, num2):
+        return num1 + num2
+
+    def subtract(self, num1, num2):
+        return num1 - num2
+
+    def multiply(self, num1, num2):
+        return num1 * num2
+
+    def divide(self, num1, num2):
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Cannot divide by zero"
+
+# make object for calculator class
+calc = Calculator()
+
+# Get input by user
+num1 = float(input("Enter the first number: "))
+operator = input("Enter the operator (+, -, *, /): ")
+num2 = float(input("Enter the second number: "))
+
+# operation works
+if operator == '+':
+    result = calc.add(num1, num2)
+elif operator == '-':
+    result = calc.subtract(num1, num2)
+elif operator == '*':
+    result = calc.multiply(num1, num2)
+elif operator == '/':
+    result = calc.divide(num1, num2)
+else:
+    result = "Invalid operator"
+
+# Display output
+print(f"Result: {result}")
